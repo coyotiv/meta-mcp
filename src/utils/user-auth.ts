@@ -348,6 +348,11 @@ export class UserAuthManager {
       state: state,
     });
 
+    const config_id = process.env.META_CONFIG_ID;
+    if (config_id) {
+      params.set("config_id", config_id);
+    }
+
     return `https://www.facebook.com/v23.0/dialog/oauth?${params.toString()}`;
   }
 

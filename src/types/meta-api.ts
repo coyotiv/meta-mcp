@@ -5,6 +5,7 @@ export interface MetaApiConfig {
   businessId?: string;
   apiVersion?: string;
   baseUrl?: string;
+  configId?: string;
   // OAuth configuration
   redirectUri?: string;
   refreshToken?: string;

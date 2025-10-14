@@ -60,6 +60,7 @@ export class AuthManager {
       businessId: process.env.META_BUSINESS_ID,
       apiVersion: process.env.META_API_VERSION,
       baseUrl: process.env.META_BASE_URL,
+      configId: process.env.META_CONFIG_ID,
       // OAuth configuration
       redirectUri: process.env.META_REDIRECT_URI,
       refreshToken: process.env.META_REFRESH_TOKEN,
@@ -120,6 +121,11 @@ export class AuthManager {
       response_type: "code",
       ...(state && { state }),
     });
+
+    const config_id = this.config.configId;
+    if (config_id) {
+      params.set("config_id", config_id);
+    }
 
     return `https://www.facebook.com/v${this.getApiVersion()}/dialog/oauth?${params.toString()}`;
   }
