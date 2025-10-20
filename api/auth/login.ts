@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     console.log('Generated OAuth state:', state);
     
     // Store state in a secure cookie for validation later
-    const isProduction = req.headers.host?.includes('vercel.app') || req.headers.host?.includes('netlify.app');
+    const isProduction = req.headers.host?.includes('vercel.app') || req.headers.host?.includes('netlify.app') || req.headers.host?.includes('coyotiv.com');
     
     // Different cookie settings for different environments
     const cookieOptions = isProduction 

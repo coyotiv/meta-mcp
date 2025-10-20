@@ -26,7 +26,7 @@ const handler = async (_req: Request) => {
       <h1>Privacy Policy</h1>
       <p class="muted">Latest update: October 20, 2025</p>
 
-      <p>This service provides a Model Context Protocol (MCP) server that connects a user’s Meta account to MCP clients (e.g., Claude, Cursor) to manage Facebook/Instagram advertising via the Meta Marketing API. It is deployed at meta-mcp-beryl.vercel.app and intended for business users.</p>
+      <p>This service provides a Model Context Protocol (MCP) server that connects a user’s Meta account to MCP clients (e.g., Claude, Cursor) to manage Facebook/Instagram advertising via the Meta Marketing API.</p>
 
       <h2>Owner and Data Controller</h2>
       <p>

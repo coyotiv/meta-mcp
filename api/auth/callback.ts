@@ -100,7 +100,7 @@ export default async function handler(
     const isProduction =
       req.headers.host?.includes("vercel.app") ||
       req.headers.host?.includes("netlify.app") ||
-      req.headers.host?.includes("offerarc.com");
+      req.headers.host?.includes("coyotiv.com");
 
     const cookieOptions = isProduction
       ? `HttpOnly; Secure; SameSite=Lax; Max-Age=${7 * 24 * 60 * 60}; Path=/`
