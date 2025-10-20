@@ -250,6 +250,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         <div class="footer">
             <p>Compatible with Claude Desktop, Cursor IDE, and other MCP clients</p>
             <p>Powered by OAuth 2.1 + Vercel + Meta Marketing API v23.0</p>
+            <p><a href="/api/privacy" style="color:#2563eb; text-decoration:none;">Privacy Policy</a></p>
         </div>
     </div>
 
