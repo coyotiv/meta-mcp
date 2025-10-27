@@ -92,7 +92,8 @@ export class MetaApiClient {
   // Account Methods
   async getAdAccounts(): Promise<AdAccount[]> {
     const allAccounts: AdAccount[] = [];
-    let nextUrl: string | undefined = "me/adaccounts?fields=id,name,account_status,balance,currency,timezone_name,business&limit=100";
+    let nextUrl: string | undefined = "me/adaccounts?fields=id,name,account_status,balance,currency,timezone_name&limit=100";
+    // let nextUrl: string | undefined = "me/adaccounts?fields=id,name,account_status,balance,currency,timezone_name,business&limit=100";
     
     // Fetch all pages of accounts
     while (nextUrl) {
@@ -712,7 +713,8 @@ export class MetaApiClient {
     const formattedAccountId = this.auth.getAccountId(accountId);
     const queryParams = {
       fields:
-        "id,name,account_status,currency,timezone_name,funding_source_details,business",
+      // "id,name,account_status,currency,timezone_name,funding_source_details,business",
+        "id,name,account_status,currency,timezone_name,funding_source_details",
     };
 
     const query = this.buildQueryString(queryParams);

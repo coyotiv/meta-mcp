@@ -111,12 +111,12 @@ async function main() {
           currency: account.currency,
           timezone_name: account.timezone_name,
           balance: account.balance,
-          business: account.business
-            ? {
-                id: account.business.id,
-                name: account.business.name,
-              }
-            : null,
+          // business: account.business
+          //   ? {
+          //       id: account.business.id,
+          //       name: account.business.name,
+          //     }
+          //   : null,
         }));
 
         const response = {
